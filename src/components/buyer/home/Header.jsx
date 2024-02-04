@@ -40,7 +40,7 @@ const Header = () => {
       <div className={"buttons hidden justify-between w-[10%]  md:flex  md:w-[35%] lg:w-[35%]"}>
         <div className="relative ">
           <button className="btn bg-[#E8E8E8] md:p-1 lg:p-2 shadow lg:pl-7 rounded-md  p-2  lg:inline-block">
-          <FaLocationArrow className="absolute top-3 left-1 " />
+          <FaLocationArrow className="absolute top-3 left-1 md:hidden lg:inline" />
             Select Location
           </button>
         </div>

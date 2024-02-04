@@ -4,13 +4,8 @@ import { FaChevronLeft } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 // import { useState } from "react";
 
-const FetchCards =async ()=>{
-      const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-      const cardData = await res.json();
-      console.log(cardData)
-      return cardData;
-}
-const MyBasket = () => {
+
+const MyBasket = ({data}) => {
   // const [dataSet , SetDataSet] = useState();
   // SetDataSet(FetchCards);
   return (
@@ -32,18 +27,19 @@ const MyBasket = () => {
       </div>
       <div className="container-fluid flex justify-evenly items-center gap-3  flex-wrap mb-3">
         {/* fetch('https://dummyjson.com/products') */}
-        {/* { dataSet.map((data)=>{
-          console.log('basket ',data.id)
-          return <ProductCards  data={data}/>
-        })} */}
+        {
+         data.map(val=>
+          // console.log('basket ',data.id)
+          <ProductCards   key={val.id}  data={val}/>
+        )}
+        {/* <ProductCards />
         <ProductCards />
         <ProductCards />
         <ProductCards />
         <ProductCards />
         <ProductCards />
         <ProductCards />
-        <ProductCards />
-        <ProductCards />
+        <ProductCards /> */}
       </div>
     </main>
   );
