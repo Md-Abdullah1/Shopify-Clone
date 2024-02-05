@@ -85,7 +85,7 @@ const Footer = () => {
                 <span className="text-[#DDDDDD] text-xs hidden md:inline">
                   GET IT ON{" "}
                 </span>
-                <h5 className="text-white text-sm md:text-lg inline sm:hidden">Google Play</h5>
+                <h5 className="text-white text-sm md:text-lg inline sm:hidden md:flex">Google Play</h5>
               </div>
             </div>
             <div className="flex items-center gap-2 w-fit rounded-md  border-2 p-1 ">
@@ -96,7 +96,7 @@ const Footer = () => {
                 <span className="text-[#DDDDDD] md:inline text-xs hidden ">
                   GET IT ON{" "}
                 </span>
-                <h5 className="text-white   text-sm md:text-lg inline sm:hidden">App Store</h5>
+                <h5 className="text-white   text-sm md:text-lg inline sm:hidden md:flex">App Store</h5>
               </div>
             </div>
           </div>

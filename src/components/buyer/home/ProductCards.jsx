@@ -1,10 +1,12 @@
 import { CiBookmark } from "react-icons/ci";
 import { FaRupeeSign } from "react-icons/fa";
+import Link from "next/link";
 
 const ProductCards = ({ data }) => {
   return (
-    <div className="container-fluid w-[70%] h-[80vh] sm:w-[45%] sm:h-[65vh] md:w-[30%] md:h-[70vh] lg:w-[23%] lg:h-[75vh] bg-white rounded-lg p-3 flex flex-col justify-between flex-wrap items-center gap-1 sm:gap-3 shadow-lg">
-      <div className=" rounded-md w-[100%] h-[40%] md:h-[30vh] border p-2  ">
+    <Link href='abcd' className="w-[90%] h-[45vh] sm:w-[45%] sm:h-[55vh] md:w-[30%] md:h-[65vh] lg:w-[23%] lg:h-[70vh]">
+      <div className="container-fluid w-full h-full bg-white rounded-lg p-3 flex flex-col justify-between flex-wrap items-center gap-1 sm:gap-3 shadow-lg">
+      <div className=" rounded-md w-[100%] h-[30%] md:h-[35%] border p-2  ">
         <img
           src="https://www.bigbasket.com/media/uploads/p/m/10000067_23-fresho-capsicum-green.jpg?tr=w-1920,q=80"
           alt=""
@@ -29,7 +31,9 @@ const ProductCards = ({ data }) => {
         </button>
       </div>
     </div>
-  );
+
+    </Link>
+      );
 };
 
 export default ProductCards;
